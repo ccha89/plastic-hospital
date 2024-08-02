@@ -5,9 +5,23 @@
 
 body{width:1200px; margin:0 auto; }
 #wrap{}
-	#header{width:100%; height:50px; background-color:#fff; padding-top:10px;}
-		h1{margin:0 auto; text-align:center; padding:30px; }
-		ul .login,ul .join {font-size:12px; font-family:arial;  float:left; position:relative; top:-35px; right:-90%; margin-right:10px; margin-bottom:20px;}
+	#header{
+		width:100%; 
+		height:50px; 
+		background-color:#fff; 
+		padding-top:10px;
+		}
+		h1{
+			margin:0 auto; 
+			text-align:center; 
+			padding:30px; 
+		}
+		ul .login,ul .join {
+			font-size:12px; 
+			font-family:arial;  
+			float:left; 
+			position:relative; 
+			top:-35px; right:-90%; margin-right:10px; margin-bottom:20px;}
 		ul .login a,ul .join a{color:gray;}
 		
 			#menu{font-size:14px; font-family:arial; float:left; width:100%; margin-bottom:10px; text-align:center;  }
