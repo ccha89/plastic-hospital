@@ -1,0 +1,93 @@
+﻿@charset "utf-8";
+@import url(reset.css);
+
+*{margin:0; padding:0;}
+
+body{width:1200px; margin:0 auto; }
+#wrap{}
+	#header{width:100%; height:50px; background-color:#fff; padding-top:10px;}
+		h1{margin:0 auto; text-align:center; padding:30px; }
+		ul .login,ul .join {font-size:12px; font-family:arial;  float:left; position:relative; top:-35px; right:-90%; margin-right:10px; margin-bottom:20px;}
+		ul .login a,ul .join a{color:gray;}
+		
+			#menu{font-size:14px; font-family:arial; float:left; width:100%; margin-bottom:10px; text-align:center;  }
+				#gnb{float:left; position:relative; left:0; z-index:999; text-align:center;  }
+						#gnb li{float:left; }
+						#gnb li a{display:block; width:150px; text-align:center; }
+						#gnb li a:hover{text-decoration:none; }
+						#gnb li ul{  position:absolute; top:20px; background-color:#fff;  color:#000; display:none;  width:150px;  text-align:center;}
+						#gnb li:hover ul {display:block; background-color:rgba(0,0,0,0.7);  color:#fff;  }
+						#gnb li ul a{color:#000; padding:10px 0;}
+						#gnb li ul a:hover{ background-color:rgba(0,0,0,0.7);  color:#fff; }	/**/
+						.highlight{color:#003A47; background-color:#FFE3EE; }
+				
+	
+		#popupImg{position:fixed; top:30%; left:40%; z-index:999; width:450px; height:520px; /*display:none;*/ }	
+			#popupImg .banner{box-shadow:2px 2px 2px #000; outline:1px solid gray;}	
+				#popupImg a{position:absolute; top:20px; right:10px;}	
+		
+		#sideNav { overflow:hidden; clear:both; position:fixed; top:120px; right:0;  float:right; background-color:#fff; outline:1px solid gray; padding:5px; height:500px; text-align:center;  border-radius: 15px;}
+			#sideNav dd{margin:10px 0; padding:0 5px;}
+			#sideNav dd a{text-decoration:none;}
+			#sideNav dd a:hover{color:gray; text-decoration:none;}
+				#sideNav dd span{display:block; margin-top:10px;}
+			
+		#container{clear:both; font-family:arial;}
+			/*.content1{float:left; width:400px; height:300px; text-align:center;}
+				.content1 h2,.content1 p{ margin-top:20px;}
+				.content1 span{display:block;}
+				.click {padding:20px;}
+				.click li{display:inline; margin-left:20px; clear:both;} */
+			.content1{}
+				.contentsImg{width:450px; height:400px; text-align:center; z-index:200; display:inline-block; float:left; position:relative; margin-top:20px; }	
+					h2 {font-size:30px;  margin-top:100px;}
+					p{  position:absolute; top:50%; left:50%; margin-left:-50px;}
+					span{display:block;  }
+					.click {position:absolute; left:20%; bottom:80px;}
+						.click li {float:left;}
+						.click li  a{margin-left:20px;}
+				
+			.slide{position:relative; top:20px; right:-50px;  width:700px; height:400px;overflow:hidden;   /**/}
+				.slider { position:absolute;  left:0; width:2100px; }
+				.slider li{float:left; }
+				
+			.content2 { clear:both; position:relative; top:0; left:0; height:auto; margin-bottom:15px; padding-bottom:20px;   background-color:#FFE3EE;}
+				.content2 .today{  display:inline; float:left; width:400px; margin-left:75px; margin-right:20px;   }
+					.today img {position:relative; top:50px;  left:80px;}
+					.today p{position:relative;  top:60px; left:15px; font-size:40px; font-weight:bold; text-align:center; font-family:arial; }
+					.today span{font-size:30px; font-weight:normal; display:block;}
+				.todayImg{width:700px;  float:left; }
+					.imgClick{}
+						.imgClick dd{display:inline;  }
+						.imgClick dd img{margin:40px 5px 0 10px; border-radius:10px;}
+						.imgClick dd:hover{transform: scale();}
+			.contentNum3{margin-top:30px; width:1200px; height:400px; }
+				.contentNum3 h3{font-family:arial; font-size:30px; margin-left:5px; height:100px; margin-top:20px; margin-bottom:10px; line-height:100px;  }
+				.contentNum3 ul{float:left;  }
+				.contentNum3 ul li{float:left; }
+				.contentNum3 li img{width:275px; height:180px; margin:0 20px 0 0; border-radius:10px; cursor:pointer; }
+			.content3{height:600px; position:relative; clear:both; }
+				.content3 h3{vertical-align:middle; text-align:center; margin:50px; margin-left:380px;}
+					.video-wrapper{text-align:center; float:left;   }
+						.세미아웃라인 {float:left; margin-right:50px;}
+						.남자코,.윤곽,.자려한코,.윤곽수술{display:block; margin-bottom:10px; }
+					.text-wrapper {display:inline-block; position:absolute;  right:20px;  top:150px;  font-weight:bold; font-size:13px;  clear:both; float:left; }
+						.text-wrapper li {margin-bottom:60px;  }
+						.text-wrapper li p{display:inline-block; }
+					
+
+			.content4{overflow:hidden; clear:both;}
+				.content4 img{ text-align:center; margin-right:5px; margin-top:20px;  padding-bottom:20px;}
+				
+			.content5{text-align:center; height:200px; clear:both; width:1200px; margin-top:30px; }
+				.content5 dl{height:200px; width:250px; float:left; border:1px solid gray; border-radius:10px; margin-left:30px;  }
+				.content5 dl dt{ margin-bottom:20px; font-size:20px; font-weight:bold; text-align:center; color:orange;  margin-top:20px;}
+				.content5 dl dd a { text-decoration:none; margin-bottom:20px; }
+				.content5 dl dd a:hover { text-decoration:underline; color:orange; }
+			
+				
+		#footer{ margin-top:100px; overflow:hidden; background-color:#003A47; width:1200px; height: auto;position:relative;  padding:10px; }
+			#footer p { position:relative; left:0;  float:left; margin:0; padding:0;}
+			#footer p a,#footer p span{ color:#fff; display:inline; float:left;  }
+
+			#footer address {clear: both; display: block; clear: both; color:#fff; padding-top:10px; }
