@@ -22,15 +22,15 @@ $(function(){
 	/*팝업창*/
 	
 	$(".slider").each(function(indexNum){
-		 $(this).css({ left: 700 * indexNum + "px" });
+		 $(this).css({ left: 1300 * indexNum + "px" });
 	});
 	
 	setInterval(function(){
 		$(".slider").each(function(){
 			let nowLeft = parseInt($(this).css("left"));
-			let moveLeft = nowLeft - 700;
+			let moveLeft = nowLeft - 1300;
 			$(this).animate({left:moveLeft},1000,function(){
-				if(moveLeft ==-1400 ){
+				if(moveLeft ==-3900 ){
 					$(this).css("left", 0);
 				}
 			});
