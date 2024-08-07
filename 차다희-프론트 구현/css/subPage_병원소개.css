@@ -23,18 +23,18 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 			position:relative; 
 			top:-35px; right:-90%; margin-right:10px; margin-bottom:20px;}
 		ul .login a,ul .join a{color:gray;}
-		
-			#menu{font-size:16px; float:left; width:100%; margin-bottom:30px; text-align:center;  }
-				#gnb{float:left; position:relative;  left:25%; z-index:999; text-align:center;  }
-						#gnb li{float:left;  }
-						#gnb li a{display:block; width:150px;  text-align:center; }
-						#gnb li a:hover{text-decoration:none; }
-						#gnb li ul{  position:absolute; top:20px; background-color:#fff;  color:#000; display:none;  width:150px;  text-align:center;}
-						#gnb li:hover ul {display:block; background-color:rgba(0,0,0,0.7);  color:#fff;  }
-						#gnb li ul a{color:#e4e4e4; padding:10px 0;}
-						#gnb li ul a:hover{ background-color:rgba(0,0,0,0.7);  color:#fff; }	/**/
-						.highlight{color:#003A47; background-color:#FFE3EE; }
-				
+        
+        #menu{font-size:18px; float:left; width:100%; margin-bottom:30px; text-align:center;  }
+        #gnb{float:left; position:relative;  left:20%; z-index:999; text-align:center;  }
+                #gnb li{float:left; }
+                #gnb li a{display:block; width:200px; height: 30px;  text-align:center; }
+                #gnb li a:hover{text-decoration:none;   }
+                #gnb li ul{  position:absolute; top:20px;  background-color:#fff;  color:#000; display:none;  width:200px;  text-align:center;}
+                #gnb li:hover ul {display:block; background-color:rgba(0,0,0,0.7);  color:#fff;  }
+                #gnb li ul a{color:#e4e4e4; padding:10px 0; }
+                #gnb li ul a:hover{ background-color:rgba(0,0,0,0.7);  color:#fff; }	/**/
+                .highlight{color:#003A47; background-color:#FFE3EE; }
+        
 	
 		#popupImg{position:fixed; top:30%; left:40%; z-index:999; width:450px; height:520px; display:none;/**/ }	
 			#popupImg .banner{box-shadow:2px 2px 2px #000; outline:1px solid gray;}	
