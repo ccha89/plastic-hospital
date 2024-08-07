@@ -1,4 +1,8 @@
 ﻿
+
+
+	/*메뉴 네비게이션*/
+	
 $(function(){
 	$("#gnb>li").mouseenter(function(){
 		$(this).children("ul").stop().slideDown();
@@ -9,8 +13,7 @@ $(function(){
 		$(this).removeClass("highlight");
 	});
 
-	/*메뉴 네비게이션*/
-	
+	/*팝업창*/
 	$("#header h1").click(function(){
 		$("#popupImg img").show();
 		
@@ -19,8 +22,8 @@ $(function(){
 		$("#popupImg img").hide();
 	});
 	
-	/*팝업창*/
-	
+
+	/*이미지 슬라이드*/	
 	$(".slider").each(function(indexNum){
 		 $(this).css({ left: 1300 * indexNum + "px" });
 	});
@@ -28,21 +31,23 @@ $(function(){
 	setInterval(function(){
 		$(".slider").each(function(){
 			let nowLeft = parseInt($(this).css("left"));
-			let moveLeft = nowLeft - 1300;
+			let moveLeft = nowLeft - 1500;
 			$(this).animate({left:moveLeft},1000,function(){
-				if(moveLeft ==-3900 ){
+				if(moveLeft ==-4500 ){
 					$(this).css("left", 0);
 				}
 			});
 		});
 	},3000);
-	
-	/*이미지 슬라이드*/
-	
-	$(".contentNum3 li img").mouseenter(function(){
-			$(this).css({border:"5px solid #FF87BE	", borderRadius:"0"});
+
+	/*이미지 opacity*/
+	$("#con_Img1 img, #con_Img2 img, #con_Img3 img, #con_Img4 img").css({opacity: 0.8});
+            
+	$("#con_Img1 img,#con_Img2 img,#con_Img3 img,#con_Img4 img").mouseenter(function(){
+		$(this).css({opacity:1});
 	});
-	$(".contentNum3 li img").mouseleave(function(){
-			$(this).css({border:"none", borderRadius:"10px"});
+	$("#con_Img1 img, #con_Img2 img, #con_Img3 img, #con_Img4 img").mouseleave(function(){
+		$(this).css({opacity:0.8});
 	});
 });
+

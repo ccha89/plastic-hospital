@@ -25,7 +25,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 		ul .login a,ul .join a{color:gray;}
 		
 			#menu{font-size:16px; float:left; width:100%; margin-bottom:30px; text-align:center;  }
-				#gnb{float:left; position:relative;  left:300px; z-index:999; text-align:center;  }
+				#gnb{float:left; position:relative;  left:25%; z-index:999; text-align:center;  }
 						#gnb li{float:left;  }
 						#gnb li a{display:block; width:150px;  text-align:center; }
 						#gnb li a:hover{text-decoration:none; }
@@ -36,8 +36,8 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 						.highlight{color:#003A47; background-color:#FFE3EE; }
 				
 	
-		#popupImg{position:fixed; top:30%; left:40%; z-index:999; width:450px; height:520px; /*display:none;*/ }	
-			#popupImg .banner{box-shadow:2px 2px 2px #000; outline:1px solid gray;}	
+		#popupImg{position:fixed; top:30%; left:60%; z-index:999; /*display:none;*/ }	
+			#popupImg .banner{box-shadow:2px 2px 2px #000; outline:1px solid gray; width:600px; height:720px; }	
 				#popupImg a{position:absolute; top:20px; right:10px;}	
 		
 		#sideNav {/*display: none;*/ overflow:hidden; clear:both; position:fixed; top:120px; right:0;  float:right; background-color:#fff; outline:1px solid gray; padding:5px; height:500px; text-align:center;  border-radius: 15px; z-index: 99999;}
@@ -51,7 +51,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 			/* content1 */
 			.content1{}
 				.content1Txt{
-					width:35%; 
+					width:40%; 
 					height:800px; 
 					text-align:center; 
 					z-index:200; 
@@ -59,17 +59,17 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 					float:left; 
 					position:relative; 
 					margin-top:20px; }	
-					.content1Txt h2 { position:absolute; top:30%; left:20%; font-size:50px;}
+					.content1Txt h2 { position:absolute; top:30%; left:30%; font-size:50px;}
 					.content1Txt p{ font-size:20px; position:absolute; top:45%; left:45%; margin-left:-50px;}
 					.content1Txt span{display:block;  }
-					.click {position:absolute; left:150px; bottom:130px; z-index: 99;}
+					.click {position:absolute; left:300px; bottom:500px; z-index: 99;}
 						.click a{float:left; cursor: pointer;}
 						.click img{margin-left:50px; width:50px; height:50px;}
 				
-			.slide{position:relative; top:20px;   width:65%; height:800px; overflow:hidden;   /**/}
-				.slider { position:absolute;  left:0; width:3600px; }
+			.slide{position:relative; top:20px;   width:60%; height:800px; overflow:hidden;   /**/}
+				.slider { position:absolute;  left:0; width:4500px; }
 				.slider li{float:left;  }
-				.slider li img{width:1300px; height:800px; float:left;}
+				.slider li img{width:1500px; height:800px; float:left;}
 			
 			/* content2 */
 			.content2 { clear:both; position:relative; width: 100%; height:800px;   background-color:#FFE3EE;}
@@ -80,15 +80,15 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 					margin-left:75px; 
 					margin-right:20px;}
 					#leftImg{position:relative;}
-						#leftImg img {position:absolute; top:180px;  left:25%; width:250px; height:100px;}
+						#leftImg img {position:absolute; top:180px;  left:35%; width:250px; height:100px;}
 					#leftTxt {position:relative;}
 						#leftTxt p{
 							position:absolute;  
 							top:320px; 
-							left:32%; 
+							left:40%; 
 							font-size:60px; 
 							font-weight:bold;
-							font-size: 70px; 
+							font-size: 80px; 
 							text-align:center;  }
 						#leftTxt span{
 							font-size:30px; 
@@ -100,9 +100,9 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 					float:right; 
 					margin-top:240px;}
 					#rightImg{
-						margin-left: 170px;}
+						margin-left: 330px;}
 						#rightImg a{display:inline;}
-						#rightImg img{ margin-right: 30px; border-radius:10px; transition: transform 0.3s;}
+						#rightImg img{ margin-right: 50px; border-radius:10px; transition: transform 0.3s;}
 						#rightImg a:hover{transform: scale(1.1);}
 					#allow{ display: none; z-index: 99999;}
 						/*#allow a{}
@@ -111,32 +111,33 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 					*/
 
 
-			.contentNum3{margin-top:100px; width:100%; height:500px; }
-				.contentNum3 h3{ font-size:30px; margin-left:5px; height:100px; margin-top:20px; margin-bottom:10px; line-height:100px;  }
-				.contentNum3 ul{float:left;  }
-				.contentNum3 ul li{float:left; margin-left: 50px; }
+			.contentNum3{margin-top:150px; width:100%; height:700px; }
+				.contentNum3 h3{ font-size:40px; margin-left:50px; padding-bottom:60px; margin-bottom:10px; line-height:100px;  }
+				.contentNum3 ul{float:left;margin-left: 170px; }
+				.contentNum3 ul li{float:left; margin-left: 80px; }
 				.contentNum3 li img{width:380px; height:200px; margin-right:30px; border-radius:10px; cursor:pointer; }
 			
-			.content3{height:700px; margin-left: 100px; margin-bottom: 150px; clear:both; }
-				.content3 h3{
+			.content3{width:100%; height:800px; clear:both; margin-left: 310px; }
+				/*.content3 h3{
 					text-align:center; 
 					margin-bottom: 150px; 
 					position: relative; 
-					left:30%;}
-					.content3 h3 img{width:140px; height:30px; }	
+					left:-10%;}
+					.content3 h3 img{width:140px; height:30px; }*/	
 					.video-wrapper{
+						position: relative;
 						text-align:center; 
-						float:left;  
+						
 						}
-						.세미아웃라인 {float:left; margin-left: 50px; margin-right:80px;}
-						.남자코,.윤곽,.자려한코,.윤곽수술{display:block; margin-bottom:25px; }
+						.세미아웃라인 {border-radius: 10px; float:left; margin-left: 50px; margin-right:150px;}
+						.남자코,.윤곽,.자려한코,.윤곽수술{border-radius: 10px; display:flex; margin-bottom:25px; }
 					.text-wrapper {
 						position: relative;
 						display:inline-block; 
-						font-size:16px;
-						top:205px;
-						left:50px; }
-						.text-wrapper li { top:0; left:0; margin-bottom:80px;  }
+						font-size:18px;
+						top:-73%;
+						left:55%; }
+						.text-wrapper li { top:0; left:0; margin-bottom:105px;  }
 						.text-wrapper li p{display:inline-block; }
 					
 
@@ -146,9 +147,10 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 				font-size: 14px;
 				overflow: hidden; /* float 해제를 위해 추가 */
 				padding: 100px;
+				margin-left: 200px;
 			}
 				/* 4-1 */
-				.content4-1{margin-right: 40px; float: left; position: relative; width:380px; height:420px;}
+				.content4-1{margin-right: 100px; float: left; position: relative; width:380px; height:420px;}
 					#content4-1Img{}
 						#content4-1Img .img1{width: 380px; border-radius:10%; }
 					#content4-1Txt{ }
@@ -172,7 +174,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 						#content4-1Add2 .img5{ position: absolute; top:427px; left:360px;  width: 10px; height:10px; border-radius: 10%;}		
 				
 				/* 4-2 */		
-				.content4-2{margin-right: 40px;  float: left; position: relative;width:380px; height:420px;}
+				.content4-2{margin-right: 100px;  float: left; position: relative;width:380px; height:420px;}
 					#content4-2Img{}
 						#content4-2Img .img2-1{width: 380px; border-radius:10%; position: absolute;}
 					#content4-2Txt{}
@@ -197,7 +199,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 				
 
 				/* 4-3 */
-				.content4-3{ margin-right: 40px;  float: left; position: relative; width:380px; height:420px;}
+				.content4-3{ margin-right: 100px;  float: left; position: relative; width:380px; height:420px;}
 					#content4-3Img{}
 						#content4-3Img .img3-1{width: 380px; border-radius:10%; position: absolute;}
 					#content4-3Txt{}
@@ -222,7 +224,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 
 
 				/* 4-4 */
-				.content4-4{ margin-right: 40px; float: left; position: relative; width:380px; height:420px;}
+				.content4-4{ margin-right: 100px; float: left; position: relative; width:380px; height:420px;}
 					#content4-4Img{}
 						#content4-4Img .img4-1{width: 380px; border-radius:10%; position: absolute; }
 					#content4-4Txt{}
@@ -256,7 +258,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 				.content5 dl dd a:hover { text-decoration:underline; color:orange; }
 			*/
 				
-		#footer{clear: both; color:#fff; background-color:#003A47; width:100%; height: 500px; position:relative;}
+		#footer{clear: both; color:#fff; background-color:#003A47; width:100%; height: 500px; position:relative; font-size: 16px;}
 			#foot{height:500px;}
 				.contact{position: relative; top:50px; left:30px;  }
 					.contact h2{margin-bottom: 30px;}
@@ -266,7 +268,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 					.contact2 li{ margin-bottom:10px; color:#fff;}
 				.contact3{position: relative; top:-160px; left:380px; color:#fff; }
 					.contact3 li{margin-bottom:10px;}
-				.location{width:300px; height:auto; position: relative; top:-350px; left:1200px;  }
+				.location{width:300px; height:auto; position: relative; top:-350px; left:1500px;  }
 					.location h2{ color:#fff;}
 					.location li{ margin-bottom: 10px; color:#fff;}
 					.location .gil{border: 1px solid #fff; border-radius: 30px; width: 150px; padding: 10px; margin-top: 70px;}
