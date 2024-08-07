@@ -1,0 +1,156 @@
+@charset "utf-8";
+@import url(reset.css);
+
+*{margin:0; padding:0;}
+
+body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x: hidden;}
+#wrap{}
+	#header{
+		width:100%; 
+		height:50px; 
+		background-color:#fff; 
+		padding-top:10px;
+		}
+		h1{
+			margin:0 auto; 
+			text-align:center; 
+			padding:30px; 
+		}
+		ul .login,ul .join {
+			font-size:12px; 
+			font-family:arial;  
+			float:left; 
+			position:relative; 
+			top:-35px; right:-90%; margin-right:10px; margin-bottom:20px;}
+		ul .login a,ul .join a{color:gray;}
+		
+			#menu{font-size:16px; float:left; width:100%; margin-bottom:30px; text-align:center;  }
+				#gnb{float:left; position:relative;  left:300px; z-index:999; text-align:center;  }
+						#gnb li{float:left;  }
+						#gnb li a{display:block; width:150px;  text-align:center; }
+						#gnb li a:hover{text-decoration:none; }
+						#gnb li ul{  position:absolute; top:20px; background-color:#fff;  color:#000; display:none;  width:150px;  text-align:center;}
+						#gnb li:hover ul {display:block; background-color:rgba(0,0,0,0.7);  color:#fff;  }
+						#gnb li ul a{color:#e4e4e4; padding:10px 0;}
+						#gnb li ul a:hover{ background-color:rgba(0,0,0,0.7);  color:#fff; }	/**/
+						.highlight{color:#003A47; background-color:#FFE3EE; }
+				
+	
+		#popupImg{position:fixed; top:30%; left:40%; z-index:999; width:450px; height:520px; /*display:none;*/ }	
+			#popupImg .banner{box-shadow:2px 2px 2px #000; outline:1px solid gray;}	
+				#popupImg a{position:absolute; top:20px; right:10px;}	
+		
+		#sideNav {/*display: none;*/ overflow:hidden; clear:both; position:fixed; top:120px; right:0;  float:right; background-color:#fff; outline:1px solid gray; padding:5px; height:500px; text-align:center;  border-radius: 15px; z-index: 99999;}
+			#sideNav dd{margin:10px 0; padding:0 5px;}
+			#sideNav dd a{text-decoration:none;}
+			#sideNav dd a:hover{color:gray; text-decoration:none;}
+				#sideNav dd span{display:block; margin-top:10px;}
+        #container{clear: both;}
+            .history,.Dr_Kim,.Dr_Lee{
+                width: 100%;
+                height: 800px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;/*텍스트를 이미지와 정렬하기 위해 사용*/
+                justify-content: space-between; /*텍스트와 이미지 사이에 일정한 공백을 생성하기 위해 사용*/
+               
+                }
+                .con_Txt{ 
+                    width: 50%; 
+                    text-align: justify;
+                    margin-left: 30px;
+                    margin-top: 20px;
+                }
+                h2{
+                    font-size: 60px;
+                        font-size: 60px;
+                         margin-bottom: 10px;
+                    }
+                h3{
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                    margin-top: 90px;
+                }
+                .historyTxt{
+                    margin-bottom: 60px;
+                }
+                h4{
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+                p{margin-bottom: 20px;}
+                    
+                .con_Img{}
+                .con_Img .con_Img1{width: 950px; height:650px;}
+            
+                .trend,.수술공간 {
+                    position: relative; /* 가상 요소를 사용하기 위해 position 속성을 설정합니다. */
+                    height: 800px;
+
+                    text-align: center;
+                    z-index: 1; /* 콘텐츠가 가상 요소 위에 놓이도록 설정합니다. */
+                }
+                
+                .trend::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url("../컨텐츠img/img/병원소개2.jpg") no-repeat center center;
+                    background-size: cover;
+                    opacity: 0.5; /* 여기서 투명도를 조절할 수 있습니다. */
+                    z-index: -1; /* 배경 이미지가 콘텐츠 뒤에 위치하게 합니다. */
+                }
+                
+                #con_Trend_Txt{
+                    z-index: 1;
+                    padding-top:250px;
+                    }
+                #con_Trend_Txt h2{
+                    font-weight: bold;
+                    font-size: 60px;
+                    margin-bottom: 100px;
+                }
+                #con_Trend_Txt p{
+                    font-size: 30px;
+                }
+
+                #Dr_Txt{
+                    margin-left: 60px;
+                    font-size: 20px;
+                    line-height: 1.6;
+                }
+                .수술공간::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url("../컨텐츠img/img/병원소개3.jpg") no-repeat center center;
+                    background-size: cover;
+                    opacity: 0.5; /* 여기서 투명도를 조절할 수 있습니다. */
+                    z-index: -1; /* 배경 이미지가 콘텐츠 뒤에 위치하게 합니다. */
+                }
+                #footer{clear: both; color:#fff; background-color:#003A47; width:100%; height: 500px; position:relative;}
+                     #foot{height:500px;}
+                        .contact{position: relative; top:50px; left:30px;  }
+                            .contact h2{margin-bottom: 30px;}
+                            .contact li{margin-bottom: 20px;}
+                        .contact2{position: relative; top:-40px; left:150px; }
+                            .contact2 h2 a{ font-size: 40px; color:#fff;}
+                            .contact2 li{ margin-bottom:10px; color:#fff;}
+                        .contact3{position: relative; top:-160px; left:380px; color:#fff; }
+                            .contact3 li{margin-bottom:10px;}
+                        .location{width:300px; height:auto; position: relative; top:-350px; left:1200px;  }
+                            .location h2{ color:#fff;}
+                            .location li{ margin-bottom: 10px; color:#fff;}
+                            .location .gil{border: 1px solid #fff; border-radius: 30px; width: 150px; padding: 10px; margin-top: 70px;}
+                            .location .gil a{color: #fff;}
+                        
+                        .map{position: absolute; top:50px; left:40%;}	
+                        .address {position: absolute; top:50px; left:80%; color:#fff; }
+                            .address li{}
+                          
