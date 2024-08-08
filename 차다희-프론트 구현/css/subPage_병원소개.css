@@ -45,6 +45,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 			#sideNav dd a{text-decoration:none;}
 			#sideNav dd a:hover{color:gray; text-decoration:none;}
 				#sideNav dd span{display:block; margin-top:10px;}
+       
         #container{clear: both;}
             .history,.Dr_Kim,.Dr_Lee{
                 width: 100%;
@@ -53,7 +54,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
                 display: flex;
                 align-items: center;/*텍스트를 이미지와 정렬하기 위해 사용*/
                 justify-content: space-between; /*텍스트와 이미지 사이에 일정한 공백을 생성하기 위해 사용*/
-               
+                margin-bottom: 100px;
                 }
                 .con_Txt{ 
                     width: 50%; 
@@ -79,8 +80,8 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
                 }
                 .con_Txt p{margin-bottom: 50px;}
                     
-                .con_Img{}
-                .con_Img .con_Img1{width:1200px; height:750px; border-radius: 30px;}
+                .con_Img{margin-top: 90px;}
+                .con_Img .con_Img1{width:900px; height:600px; border-radius: 30px;}
             
                 .trend,.수술공간 {
                     position: relative; /* 가상 요소를 사용하기 위해 position 속성을 설정합니다. */
@@ -99,13 +100,13 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
                     height: 100%;
                     background: url("../컨텐츠img/img/병원소개2.jpg") no-repeat center center;
                     background-size: cover;
-                    opacity: 0.5; /* 여기서 투명도를 조절할 수 있습니다. */
+                    opacity: 0.5;/*투명도 조절*/
                     z-index: -1; /* 배경 이미지가 콘텐츠 뒤에 위치하게 합니다. */
                 }
                 
                 #con_Trend_Txt{
                     z-index: 1;
-                    padding-top:500px;
+                    padding-top:300px;
                     }
                 #con_Trend_Txt h2{
                     font-weight: bold;
@@ -121,7 +122,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
                     font-size: 25px;
                     line-height: 1.6;
                 }
-                #Dr_Img{ height: 1000px;}
+                #Dr_Img{ height: 850px;}
 
                 .수술공간::before {
                     content: "";
@@ -129,7 +130,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
                     top: 0;
                     left: 0;
                     width: 100%;
-                    height: 100%;
+                    height: 100vh;
                     background: url("../컨텐츠img/img/병원소개3.jpg") no-repeat center center;
                     background-size: cover;
                     opacity: 0.5; /* 여기서 투명도를 조절할 수 있습니다. */
@@ -145,7 +146,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
                             .contact2 li{ margin-bottom:10px; color:#fff;}
                         .contact3{position: relative; top:-160px; left:380px; color:#fff; }
                             .contact3 li{margin-bottom:10px;}
-                        .location{width:300px; height:auto; position: relative; top:-350px; left:1500px; }
+                        .location{width:300px; height:auto; position: relative; top:-350px; left:1200px; }
                             .location h2{ color:#fff;}
                             .location li{ margin-bottom: 10px; color:#fff;}
                             .location .gil{border: 1px solid #fff; border-radius: 30px; width: 150px; padding: 10px; margin-top: 70px;}
