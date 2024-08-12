@@ -25,51 +25,84 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 		ul .login a,ul .join a{color:gray;}
 		
 			#menu{font-size:18px; float:left; width:100%; margin-bottom:30px; text-align:center;  }
-				#gnb{float:left; position:relative;  left:20%; z-index:999; text-align:center;  }
+				#gnb{ 
+					display: flex; /* Flexbox를 사용하여 수평 정렬 */ 
+					position:relative;  
+					left:5%; 
+					z-index:999999; 
+					text-align:center;  }
 						#gnb li{float:left; }
-						#gnb li a{display:block; width:200px; height: 30px;  text-align:center; }
+						#gnb>li a{display:block; width:200px; height: 50px; padding-top: 10px;  text-align:center; }
 						#gnb li a:hover{text-decoration:none;   }
-						#gnb li ul{  position:absolute; top:20px;  background-color:#fff;  color:#000; display:none;  width:200px;  text-align:center;}
+						#gnb li ul{  position:absolute; top:50px;  background-color:#fff;  color:#000; display:none;  width:200px;  text-align:center;}
 						#gnb li:hover ul {display:block; background-color:rgba(0,0,0,0.7);  color:#fff;  }
-						#gnb li ul a{color:#e4e4e4; padding:10px 0; }
+						#gnb li ul a{color:#e4e4e4; padding-top: 10px;}
 						#gnb li ul a:hover{ background-color:rgba(0,0,0,0.7);  color:#fff; }	/**/
 						.highlight{color:#003A47; background-color:#FFE3EE; }
 				
 	
-		#popupImg{position:fixed; top:30%; left:60%; z-index:999; /*display:none;*/ }	
-			#popupImg .banner{box-shadow:2px 2px 2px #000; outline:1px solid gray; width:600px; height:720px; }	
+		#popupImg{position:fixed; top:10%; left:60%; z-index:999999; /*display:none;*/ }	
+			#popupImg .banner{box-shadow:2px 2px 2px #000; outline:1px solid gray; width:500px; height:600px; }	
 				#popupImg a{position:absolute; top:20px; right:10px;}	
 		
-		#sideNav {/*display: none;*/ overflow:hidden; clear:both; position:fixed; top:120px; right:0;  float:right; background-color:#fff; outline:1px solid gray; padding:5px; height:500px; text-align:center;  border-radius: 15px; z-index: 99999;}
-			#sideNav dd{margin:10px 0; padding:0 5px;}
+		#sideNav {/*display: none;*/ 
+			overflow:hidden; 
+			clear:both; 
+			position:fixed; top:220px; right:0;  float:right; background-color:#fff; outline:1px solid gray; padding:3px; height:450px; text-align:center;  border-radius: 15px; z-index: 99999;}
+			#sideNav dd{margin:5px 0; padding:0 5px;}
 			#sideNav dd a{text-decoration:none;}
 			#sideNav dd a:hover{color:gray; text-decoration:none;}
 				#sideNav dd span{display:block; margin-top:10px;}
 			
-		#container{clear:both; font-family:arial;}
+		#container{
+			clear:both; 
+			font-family:arial;   
+			display: flex;
+			flex-direction: column;}
 
 			/* content1 */
 			.content1{}
 				.content1Txt{
-					width:40%; 
-					height:800px; 
+					width:50%; 
+					height:500px; 
 					text-align:center; 
 					z-index:200; 
 					display:inline-block; 
-					float:left; 
-					position:relative; 
-					margin-top:20px; }	
-					.content1Txt h2 { position:absolute; top:30%; left:30%; font-size:50px;}
+					float:right; 
+					position:relative;  }	
+					.content1Txt h2 { position:absolute; top:20%; left:25%; font-size:50px;}
 					.content1Txt p{ font-size:20px; position:absolute; top:45%; left:45%; margin-left:-50px;}
 					.content1Txt span{display:block;  }
-					.click {position:absolute; left:190px; bottom:150px; z-index: 99;}
+					.click {
+						position:absolute; 
+						right:18%; 
+						bottom:15%; 
+						z-index: 99;}
 						.click a{float:left; cursor: pointer;}
-						.click img{margin-left:50px; width:50px; height:50px;}
+						.click img{margin-left:50px; width:35px; height:35px;}
 				
-			.slide{position:relative; top:20px;   width:60%; height:800px; overflow:hidden;   /**/}
-				.slider { position:absolute;  left:0; width:4500px; }
-				.slider li{float:left;  }
-				.slider li img{width:1500px; height:800px; float:left;}
+			.slideWrap {
+							position: relative;
+							width: 750px; /* 한 이미지의 너비 */
+							height: 500px; /* 이미지의 높이 */
+							overflow: hidden;
+							}
+				.slider { 
+					position: relative; /* 상대적 위치 */
+					width: 2250px; /* 3개의 슬라이드를 모두 포함하는 너비 */
+					left: 0; /* 초기 위치 */
+					list-style: none; /* ul 기본 스타일 제거 */
+					margin: 0;
+					padding: 0;
+					display: flex; /* 플렉스 박스를 사용하여 수평 정렬 */}
+					.slider li {
+						width: 750px; /* 슬라이드 하나의 너비 */
+    					height: 500px;
+						}
+					.slider li img{
+						width: 100%; /* 이미지가 li 크기에 맞게 조정 */
+						height: 100%;
+						display: block; /* 이미지가 블록 레벨 요소로 취급되도록 설정 */}
 			
 			/* content2 */
 			.content2 { clear:both; position:relative; width: 100%; height:800px;   background-color:#FFE3EE;}
@@ -80,202 +113,274 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 					margin-left:75px; 
 					margin-right:20px;}
 					#leftImg{position:relative;}
-						#leftImg img {position:absolute; top:180px;  left:35%; width:250px; height:100px;}
+						#leftImg img {
+							position:absolute; 
+							top:180px;  
+							left:20%; width:250px; height:100px;}
 					#leftTxt {position:relative;}
 						#leftTxt p{
 							position:absolute;  
 							top:320px; 
-							left:40%; 
+							left:30%; 
 							font-size:60px; 
 							font-weight:bold;
 							font-size: 80px; 
 							text-align:center;  }
 						#leftTxt span{
-							font-size:30px; 
+							font-size:px; 
 							font-weight:normal; 
 							display:block;}
-				.todayRight{
-					width:70%; 
-					height: 800px;  
-					float:right; 
-					margin-top:240px;}
-					#rightImg{
-						margin-left: 220px;}
-						#rightImg a{display:inline;}
-						#rightImg img{ margin-right: 30px; border-radius:10px; transition: transform 0.3s;}
-						#rightImg a:hover{transform: scale(1.1);}
-					#allow{ display: none; z-index: 99999;}
-						/*#allow a{}
-							.leftAllow{ width:35px; height: 15px; position:absolute; top:50%; left:38%;}
-							.rightAllow{width:35px; height: 15px; position:absolute; top:50%; right:15px;}
-					*/
 
+							.todayRight {
+								width: 70%;
+								height: 800px;
+								margin-top: 240px;
+								position: relative;
+								top: 8%;
+								left: 35%;
+							}
+							
+							#rightImg {
+								position: absolute;
+								top: 0;
+								left: 0;
+								overflow: hidden;
+								width: 880px;
+								height: 310px;
+							}
+							
+							#rightImg li {
+								width: 200px;
+								height: 310px;
+								border-radius: 10px;
+								transition: transform 0.3s;
+								position: absolute;
+								margin-right: 20px;
+							}
+							
+							#rightImg li:hover {
+								transform: scale(1.2);
+								border-radius: 10px;
+							}
+							#rightImg img{
+								border-radius: 10px;
+							}
+							
+							#btn {
+								z-index: 99999;
+							}
+							
+							#btn a {
+								cursor: pointer;
+							}
+							
+							.prev {
+								width: 50px;
+								height: 50px;
+								position: absolute;
+								top: 55%;
+								left: 30%;
+							}
+							
+							.next {
+								width: 50px;
+								height: 50px;
+								position: absolute;
+								top: 55%;
+								right: 5%;
+							}
+							.next{
+								width:50px; 
+								height: 50px; 
+								position:absolute; 
+								top:55%; 
+								right:5%;
+							}
+						/**/
 
-			.contentNum3{margin-top:150px; width:100%; height:700px; }
-				.contentNum3 h3{ font-size:40px; margin-left:50px; padding-bottom:60px; margin-bottom:10px; line-height:100px;  }
-				.contentNum3 ul{float:left;margin-left: 100px; }
-				.contentNum3 ul li{float:left; margin-left: 50px; }
-				.contentNum3 li img{width:350px; height:200px; margin-right:30px; border-radius:10px; cursor:pointer; }
-			
-			.content3{width:100%; height:800px; clear:both; margin-left: 310px; }
-				/*.content3 h3{
-					text-align:center; 
-					margin-bottom: 150px; 
-					position: relative; 
-					left:-10%;}
-					.content3 h3 img{width:140px; height:30px; }*/	
-					.video-wrapper{
-						position: relative;
-						text-align:center; 
-						
+					.content3,.content4,.content5 {
+						display: block;
+						width: 100%; /* 각 content가 전체 너비를 차지하도록 설정 */
+						height: 650px;
+						margin-bottom: 20px; /* 각 content 사이에 간격 추가 */
 						}
-						.세미아웃라인 {border-radius: 10px; float:left; margin-left: -70px; margin-right:50px;}
-						.남자코,.윤곽,.자려한코,.윤곽수술{border-radius: 10px; display:flex; margin-bottom:25px; }
-					.text-wrapper {
-						position: relative;
-						display:inline-block; 
-						font-size:18px;
-						top:-73%;
-						left:58%; }
-						.text-wrapper li { top:0; left:0; margin-bottom:105px;  }
-						.text-wrapper li p{display:inline-block; }
+						.clearfix::after {
+							content: "";
+							display: block;
+							clear: both;
+						}
+						
+						.content3 {
+							width: 100%;
+							overflow: hidden; /* 또는 clearfix 클래스를 추가 */
+							margin-left: 100px;
+							margin-top: 200px;
+						}
+						
+						.content3-1, .content3-2, .content3-3, .content3-4 {
+							float: left;
+							width: 300px;
+							height: auto;
+							position: relative;
+							margin-right: 30px;
+						}
+						
+						.content3-3, .content3-4 {
+							clear: none; 
+						}
 					
+						
+						#content3-1Img .img1, 
+						#content3-2Img .img1, 
+						#content3-3Img .img1,
+						#content3-4Img .img1 {
+							border-radius: 10px;
+							cursor: pointer;
+							width: 300px;
+						}
+						#content3-1Txt,#content3-2Txt,
+						#content3-3Txt,#content3-4Txt{
+							font-size: 12px;
+						}
+						
+						.content3-1Bottom, .content3-1Bottom2, 
+						.content3-2Bottom, .content3-2Bottom2,
+						.content3-3Bottom, .content3-3Bottom2, 
+						.content3-4Bottom, .content3-4Bottom2 {
+							margin-top: 15px;
+						}
+						
+						#content3-1Img2 .img2, #content3-1Img3 .img4, 
+						#content3-2Img2 .img2, #content3-2Img3 .img4,
+						#content3-3Img2 .img2, #content3-3Img3 .img4,
+						#content3-4Img2 .img2, #content3-4Img3 .img4 {
+							border-radius: 10px;
+							width: 40px;
+							height: 40px;
+						}
+						
+						#content3-1Txt2,#content3-1Txt3,
+						#content3-2Txt2,#content3-2Txt3,
+						#content3-3Txt2,#content3-3Txt3,
+						#content3-4Txt2,#content3-4Txt3
+						 {
+							position: relative;
+							cursor: pointer;
+							font-size: 12px;
+						}
 
-			.content4{ 
-				width: 100%; 
-				height: 700px; 
-				font-size: 14px;
-				overflow: hidden; /* float 해제를 위해 추가 */
-				padding: 100px;
-				margin-left: 0px;
-			}
-				/* 4-1 */
-				.content4-1{margin-right: 50px; float: left; position: relative; width:380px; height:420px;}
-					#content4-1Img{}
-						#content4-1Img .img1{width: 380px; border-radius:10%; }
-					#content4-1Txt{ }
-						#content4-1Txt h3 { font-size: 14px;  position: absolute; top:300px; left:10px;}
-						#content4-1Txt p {font-size: 12px; position: absolute; top:320px; left:10px;}
-				.content4-1Bottom{}
-					#content4-1Img2{}
-						#content4-1Img2 .img2{ position: absolute; top:360px; left:10px; width: 40px; height:40px; border-radius: 10%;}	
-					#content4-1Txt2{}
-						#content4-1Txt2 p { position: absolute; top:370px; left:120px;}
-					#content4-1Add{}
-						#content4-1Add p{font-size: 10px;  position: absolute; top:375px; left:330px;}
-						#content4-1Add .img3{ position: absolute; top:377px; left:360px;  width: 10px; height:10px; border-radius: 10%;}
-				.content4-1Bottom2{width: 380px; height: 200px; }	
-					#content4-1Img3{}
-						#content4-1Img3 .img4{ position: absolute; top:420px; left:10px; width: 40px; height:40px; border-radius: 10%;}	
-					#content4-1Txt3{}
-						#content4-1Txt3 p { position: absolute; top:425px; left:120px;}
-					#content4-1Add2{}
-						#content4-1Add2 p{font-size: 10px;  position: absolute; top:425px; left:330px;}
-						#content4-1Add2 .img5{ position: absolute; top:427px; left:360px;  width: 10px; height:10px; border-radius: 10%;}		
-				
-				/* 4-2 */		
-				.content4-2{margin-right: 50px;  float: left; position: relative;width:380px; height:420px;}
-					#content4-2Img{}
-						#content4-2Img .img2-1{width: 380px; border-radius:10%; position: absolute;}
-					#content4-2Txt{}
-						#content4-2Txt h3 { font-size: 14px; position: absolute; top:300px; left:10px;}
-						#content4-2Txt p {font-size: 12px; position: absolute; top:320px; left:10px;}
-				.content4-2Bottom{}	
-					#content4-2Img2{}
-						#content4-2Img2 .img2-2{ position: absolute; top:360px; left:10px; width: 40px; height:40px; border-radius: 10%;}	
-					#content4-2Txt2{}
-						#content4-2Txt2 p { position: absolute; top:370px; left:120px;}
-					#content4-2Add{}
-						#content4-2Add p{ font-size: 10px; position: absolute; top:375px; left:330px;}
-						#content4-2Add .img2-3{ position: absolute; top:377px; left:360px;  width: 10px; height:10px; border-radius: 10%;}	
-				.content4-2Bottom2{width: 380px; height: 200px; }	
-					#content4-2Img3{}
-						#content4-2Img3 .img2-4{ position: absolute; top:420px; left:10px; width: 40px; height:40px; border-radius: 10%;}	
-					#content4-2Txt3{}
-						#content4-2Txt3 p { position: absolute; top:425px; left:120px;}
-					#content4-2Add2{}
-						#content4-2Add2 p{font-size: 10px;  position: absolute;top:425px; left:330px;}
-						#content4-2Add2 .img2-5{ position: absolute; top:427px; left:360px;  width: 10px; height:10px; border-radius: 10%;}		
-				
+						#content3-1Txt2 .txt1, #content3-1Txt3 .txt1,
+						#content3-2Txt2 .txt1, #content3-2Txt3 .txt1,
+						#content3-3Txt2 .txt1, #content3-3Txt3 .txt1,
+						#content3-4Txt2 .txt1, #content3-4Txt3 .txt1 {
+							position: absolute;
+							top: -30px;
+							left: 70px;
+							
+						}
+						
+						#content3-1Add,#content3-1Add2,
+						#content3-2Add,#content3-2Add2,
+						#content3-3Add,#content3-3Add2,
+						#content3-4Add,#content3-4Add2
+						{position: relative;}
 
-				/* 4-3 */
-				.content4-3{ margin-right: 50px;  float: left; position: relative; width:380px; height:420px;}
-					#content4-3Img{}
-						#content4-3Img .img3-1{width: 380px; border-radius:10%; position: absolute;}
-					#content4-3Txt{}
-						#content4-3Txt h3 { font-size: 14px; position: absolute; top:300px; left:10px;}
-						#content4-3Txt p {font-size: 12px; position: absolute; top:320px; left:10px;}
-				.content4-3Bottom{}	
-					#content4-3Img2{}
-						#content4-3Img2 .img3-2{ position: absolute; top:360px; left:10px; width: 40px; height:40px; border-radius: 10%;}	
-					#content4-3Txt2{}
-						#content4-3Txt2 p { position: absolute; top:370px; left:120px;}
-					#content4-3Add{}
-						#content4-3Add p{ font-size: 10px; position: absolute; top:375px; left:330px;}
-						#content4-3Add .img3-3{ position: absolute; top:377px; left:360px;  width: 10px; height:10px; border-radius: 10%;}	
-				.content4-3Bottom2{width: 380px; height: 200px; }	
-					#content4-3Img3{}
-						#content4-3Img3 .img3-4{ position: absolute; top:420px; left:10px; width: 40px; height:40px; border-radius: 10%;}	
-					#content4-3Txt3{}
-						#content4-3Txt3 p { position: absolute; top:425px; left:120px;}
-					#content4-3Add2{}
-						#content4-3Add2 p{font-size: 10px;  position: absolute; top:425px; left:330px;}
-						#content4-3Add2 .img3-5{ position: absolute; top:427px; left:360px;  width: 10px; height:10px; border-radius: 10%;}		
+						#content3-1Add .txt2, #content3-1Add2 .txt2,
+						#content3-2Add .txt2, #content3-2Add2 .txt2,
+						#content3-3Add .txt2, #content3-3Add2 .txt2,
+						#content3-4Add .txt2, #content3-4Add2 .txt2
+						 {
+							position: absolute;
+							top: -30px;
+							left: 230px;
+							font-size: 10px;
+						}
+						
+						#content3-1Add .img3, #content3-1Add2 .img5,
+						#content3-2Add .img3, #content3-2Add2 .img5,
+						#content3-3Add .img3, #content3-3Add2 .img5,
+						#content3-4Add .img3, #content3-4Add2 .img5
+						 {
+							position: absolute;
+							top: -30px;
+							left: 260px;
+							width: 15px;
+							height: 15px;
+							cursor: pointer;
+						}
+				.content4{
+					clear: both;
+					margin-left: 100px;
+				}
+					.content4 h3{
+						font-size: 50px;
+						padding: 100px 0;
+					}
+					.content4 li{
+						float: left;
+						margin-right: 25px;
+					}
+					.content4 li img{
+						width:300px;
+						height: 160px;
+						border-radius: 10px;
+					}
+					.content4 img:hover{border: 8px solid #ffa0c6;}
+				.content5{
+					clear: both;
+					margin-left: 100px;
+					margin-bottom: 100px;
+				}	
+					.content5 h3{
+						font-size: 50px;
+						padding: 100px 0;
+						
+					}	
+						.content5 .video-wrapper {
+							position: relative;
+							width: calc(420px * 5); /* 복제된 슬라이드를 포함한 전체 너비 */
+							height: 250px; /* 동영상의 높이와 일치 */
+							overflow: hidden; /* 슬라이드 밖으로 나가는 요소를 숨김 */
+							display: flex; /* 슬라이드를 가로로 배치 */
+						}
+						
+						.video-wrapper li {
+							min-width: 420px; /* 슬라이드의 너비를 동영상의 너비와 일치 */
+							height: 100%; /* 컨테이너의 높이와 일치 */
+							list-style: none;
+							display: flex; /* 동영상을 가운데 정렬 */
+							justify-content: center;
+							align-items: center;
+						}
+						.video-wrapper iframe {border-radius: 10px;}
 
-
-				/* 4-4 */
-				.content4-4{ margin-right: 50px; float: left; position: relative; width:380px; height:420px;}
-					#content4-4Img{}
-						#content4-4Img .img4-1{width: 380px; border-radius:10%; position: absolute; }
-					#content4-4Txt{}
-						#content4-4Txt h3 { font-size: 14px; position: absolute; top:300px; left:10px;}
-						#content4-4Txt p {font-size: 12px; position: absolute; top:320px; left:10px;}
-				.content4-4Bottom{}	
-					#content4-4Img2{}
-						#content4-4Img2 .img4-2{ position: absolute; top:360px; left:10px; width: 40px; height:40px; border-radius: 10%;}	
-					#content4-4Txt2{}
-						#content4-4Txt2 p { position: absolute; top:370px; left:120px;}
-					#content4-4Add{}
-						#content4-4Add p{ font-size: 10px; position: absolute; top:375px; left:330px;}
-						#content4-4Add .img4-3{ position: absolute; top:377px; left:360px;  width: 10px; height:10px; border-radius: 10%;}	
-				.content4-4Bottom2{width: 380px; height: 200px; }	
-					#content4-4Img3{}
-						#content4-4Img3 .img4-4{ position: absolute; top:420px; left:10px; width: 40px; height:40px; border-radius: 10%;}	
-					#content4-4Txt3{}
-						#content4-4Txt3 p { position: absolute; top:425px; left:120px;}
-					#content4-4Add2{}
-						#content4-4Add2 p{font-size: 10px;  position: absolute; top:425px; left:330px;}
-						#content4-4Add2 .img4-5{ position: absolute; top:427px; left:360px;  width: 10px; height:10px; border-radius: 10%;}		
-
-
-
-
-
-			/*.content5{text-align:center; height:200px; clear:both; width:1200px; margin-top:30px; }
-				.content5 dl{height:200px; width:250px; float:left; border:1px solid gray; border-radius:10px; margin-left:30px;  }
-				.content5 dl dt{ margin-bottom:20px; font-size:20px; font-weight:bold; text-align:center; color:orange;  margin-top:20px;}
-				.content5 dl dd a { text-decoration:none; margin-bottom:20px; }
-				.content5 dl dd a:hover { text-decoration:underline; color:orange; }
-			*/
-				
-		#footer{clear: both; color:#fff; background-color:#003A47; width:100%; height: 500px; position:relative; font-size: 16px;}
+		#footer{
+			clear: both; 
+			color:#fff; 
+			background-color:#003A47; 
+			width:100%; height: 500px; 
+			position:relative; 
+			font-size: 14px;
+			z-index: 99999;
+		}
 			#foot{height:500px;}
-				.contact{position: relative; top:50px; left:30px;  }
+				.contact{position: relative; top:50px; left:20px;  }
 					.contact h2{margin-bottom: 30px;}
 					.contact li{margin-bottom: 20px;}
-				.contact2{position: relative; top:-40px; left:150px; }
+				.contact2{position: relative; top:-40px; left:140px; }
 					.contact2 h2 a{ font-size: 40px; color:#fff;}
 					.contact2 li{ margin-bottom:10px; color:#fff;}
-				.contact3{position: relative; top:-160px; left:380px; color:#fff; }
+				.contact3{position: relative; top:-160px; left:300px; color:#fff; }
 					.contact3 li{margin-bottom:10px;}
-				.location{width:300px; height:auto; position: relative; top:-350px; left:1200px;  }
+				.location{width:300px; height:auto; position: relative; top:-330px; left:900px;  }
 					.location h2{ color:#fff;}
 					.location li{ margin-bottom: 10px; color:#fff;}
 					.location .gil{border: 1px solid #fff; border-radius: 30px; width: 150px; padding: 10px; margin-top: 70px;}
 					.location .gil a{color: #fff;}
+					.location .gil a:hover{ color: #ff91eb; font-weight: bold; text-decoration: none;}
 				
-				.map{position: absolute; top:50px; left:40%;}	
-				.address {position: absolute; top:50px; left:80%; color:#fff; }
+				.map{width:300px; height: 300px;  position: absolute; top:50px; left:30%;}	
+				.address {position: absolute; top:35px; left:80%; color:#fff; font-size: 14px;}
 					.address li{}
 					
 

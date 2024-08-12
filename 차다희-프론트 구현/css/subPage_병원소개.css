@@ -25,26 +25,49 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 		ul .login a,ul .join a{color:gray;}
         
         #menu{font-size:18px; float:left; width:100%; margin-bottom:30px; text-align:center;  }
-        #gnb{float:left; position:relative;  left:20%; z-index:999; text-align:center;  }
-                #gnb li{float:left; }
-                #gnb li a{display:block; width:200px; height: 30px;  text-align:center; }
-                #gnb li a:hover{text-decoration:none;   }
-                #gnb li ul{  position:absolute; top:20px;  background-color:#fff;  color:#000; display:none;  width:200px;  text-align:center;}
-                #gnb li:hover ul {display:block; background-color:rgba(0,0,0,0.7);  color:#fff;  }
-                #gnb li ul a{color:#e4e4e4; padding:10px 0; }
-                #gnb li ul a:hover{ background-color:rgba(0,0,0,0.7);  color:#fff; }	/**/
-                .highlight{color:#003A47; background-color:#FFE3EE; }
+            #gnb{ 
+                display: flex; /* Flexbox를 사용하여 수평 정렬 */ 
+                position:relative;  
+                left:5%; 
+                z-index:999999; 
+                text-align:center;  }
+                    #gnb li{float:left; }
+                    #gnb>li a{display:block; width:200px; height: 50px; padding-top: 10px;  text-align:center; }
+                    #gnb li a:hover{text-decoration:none;   }
+                    #gnb li ul{  position:absolute; top:50px;  background-color:#fff;  color:#000; display:none;  width:200px;  text-align:center;}
+                    #gnb li:hover ul {display:block; background-color:rgba(0,0,0,0.7);  color:#fff;  }
+                    #gnb li ul a{color:#e4e4e4; padding-top: 10px;}
+                    #gnb li ul a:hover{ background-color:rgba(0,0,0,0.7);  color:#fff; }	/**/
+                    .highlight{color:#003A47; background-color:#FFE3EE; }
+
+                        
+                        #popupImg{position:fixed; top:30%; left:60%; z-index:999; display:none;/**/ }	
+                        #popupImg .banner{box-shadow:2px 2px 2px #000; outline:1px solid gray; width:600px; height:720px; }	
+                            #popupImg a{position:absolute; top:20px; right:10px;}	
+		
+                            #sideNav {/*display: none;*/ 
+                                overflow:hidden; 
+                                clear:both; 
+                                position:fixed; top:220px; right:0;  float:right; background-color:#fff; outline:1px solid gray; padding:5px; height:500px; text-align:center;  border-radius: 15px; z-index: 99999;}
+                                #sideNav dd{margin:10px 0; padding:0 5px;}
+                                #sideNav dd a{text-decoration:none;}
+                                #sideNav dd a:hover{color:gray; text-decoration:none;}
+                                    #sideNav dd span{display:block; margin-top:10px;}
+                                
         
 	
 		#popupImg{position:fixed; top:30%; left:40%; z-index:999; width:450px; height:520px; display:none;/**/ }	
 			#popupImg .banner{box-shadow:2px 2px 2px #000; outline:1px solid gray;}	
 				#popupImg a{position:absolute; top:20px; right:10px;}	
 		
-		#sideNav {/*display: none;*/ overflow:hidden; clear:both; position:fixed; top:120px; right:0;  float:right; background-color:#fff; outline:1px solid gray; padding:5px; height:500px; text-align:center;  border-radius: 15px; z-index: 99999;}
-			#sideNav dd{margin:10px 0; padding:0 5px;}
-			#sideNav dd a{text-decoration:none;}
-			#sideNav dd a:hover{color:gray; text-decoration:none;}
-				#sideNav dd span{display:block; margin-top:10px;}
+                #sideNav {/*display: none;*/ 
+                    overflow:hidden; 
+                    clear:both; 
+                    position:fixed; top:220px; right:0;  float:right; background-color:#fff; outline:1px solid gray; padding:3px; height:450px; text-align:center;  border-radius: 15px; z-index: 99999;}
+                    #sideNav dd{margin:5px 0; padding:0 5px;}
+                    #sideNav dd a{text-decoration:none;}
+                    #sideNav dd a:hover{color:gray; text-decoration:none;}
+                        #sideNav dd span{display:block; margin-top:10px;}
        
         #container{clear: both;}
             .history,.Dr_Kim,.Dr_Lee{
@@ -55,38 +78,43 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
                 align-items: center;/*텍스트를 이미지와 정렬하기 위해 사용*/
                 justify-content: space-between; /*텍스트와 이미지 사이에 일정한 공백을 생성하기 위해 사용*/
                 margin-bottom: 100px;
+                
                 }
                 .con_Txt{ 
-                    width: 50%; 
+                    width: 45%; 
                     text-align: justify;
                     margin-left: 100px;
+                    margin-top: 250px;
                 }
                 .con_Txt h2{
-                    font-size: 80px;
-                        font-size: 60px;
+                    font-size: 70px;
+                        font-size: 55px;
                          margin-bottom: 10px;
                     }
                 .con_Txt h3{
-                    font-size: 35px;
+                    font-size: 30px;
                     margin-bottom: 20px;
                     margin-top: 90px;
                 }
                 .historyTxt{
-                    margin-bottom: 100px;
+                    font-size: 14px;
+                    margin-bottom: 50px;
                 }
                 .con_Txt h4{
-                    font-size: 20px;
+                    font-size: 18px;
                     margin-bottom: 20px;
                 }
-                .con_Txt p{margin-bottom: 50px;}
+                .con_Txt p{
+                    margin-bottom: 20px;
+                    font-size: 14px;}
                     
-                .con_Img{margin-top: 90px;}
-                .con_Img .con_Img1{width:900px; height:600px; border-radius: 30px;}
+                .con_Img{margin-top: 240px; margin-left: 20px;}
+                .con_Img .con_Img1{width:750px; height:650px; border-radius: 30px;}
             
                 .trend,.수술공간 {
                     position: relative; /* 가상 요소를 사용하기 위해 position 속성을 설정합니다. */
                     height: 100vh;
-
+                    top:100px;
                     text-align: center;
                     z-index: 1; /* 콘텐츠가 가상 요소 위에 놓이도록 설정합니다. */
                 }
@@ -106,7 +134,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
                 
                 #con_Trend_Txt{
                     z-index: 1;
-                    padding-top:300px;
+                    padding-top:80px;
                     }
                 #con_Trend_Txt h2{
                     font-weight: bold;
@@ -122,7 +150,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
                     font-size: 25px;
                     line-height: 1.6;
                 }
-                #Dr_Img{ height: 850px;}
+                #Dr_Img{}
 
                 .수술공간::before {
                     content: "";
@@ -136,23 +164,34 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
                     opacity: 0.5; /* 여기서 투명도를 조절할 수 있습니다. */
                     z-index: -1; /* 배경 이미지가 콘텐츠 뒤에 위치하게 합니다. */
                 }
-                #footer{ color:#fff; background-color:#003A47; width:100%; height: 500px; position:relative; font-size: 16px;}
-                     #foot{height:500px;}
-                        .contact{position: relative; top:50px; left:30px;  }
+                #footer{
+                    color:#fff; 
+                    background-color:#003A47; 
+                    width:100%; height: 500px; 
+                    position:relative; 
+                    font-size: 14px;
+                    z-index: 99999;
+                }
+                    #foot{height:500px;}
+                        .contact{position: relative; top:50px; left:20px;  }
                             .contact h2{margin-bottom: 30px;}
                             .contact li{margin-bottom: 20px;}
-                        .contact2{position: relative; top:-40px; left:150px; }
+                        .contact2{position: relative; top:-40px; left:140px; }
                             .contact2 h2 a{ font-size: 40px; color:#fff;}
                             .contact2 li{ margin-bottom:10px; color:#fff;}
-                        .contact3{position: relative; top:-160px; left:380px; color:#fff; }
+                        .contact3{position: relative; top:-160px; left:300px; color:#fff; }
                             .contact3 li{margin-bottom:10px;}
-                        .location{width:300px; height:auto; position: relative; top:-350px; left:1200px; }
+                        .location{width:300px; height:auto; position: relative; top:-330px; left:900px;  }
                             .location h2{ color:#fff;}
                             .location li{ margin-bottom: 10px; color:#fff;}
                             .location .gil{border: 1px solid #fff; border-radius: 30px; width: 150px; padding: 10px; margin-top: 70px;}
                             .location .gil a{color: #fff;}
+                            .location .gil a:hover{ color: #ff91eb; font-weight: bold; text-decoration: none;}
                         
-                        .map{position: absolute; top:50px; left:40%;}	
-                        .address {position: absolute; top:50px; left:80%; color:#fff; }
+                        .map{width:300px; height: 300px;  position: absolute; top:50px; left:30%;}	
+                        .address {position: absolute; top:35px; left:80%; color:#fff; font-size: 14px;}
                             .address li{}
-                          
+                            
+
+
+

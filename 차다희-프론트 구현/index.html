@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>더조은 성형외과 홈페이지</title>
 		<link rel="stylesheet" type="text/css" href="css/tj.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -113,7 +114,7 @@
 					<dd><a href="#"><img src="컨텐츠img/info/빠른예약2.png" alt="빠른예약"><span>빠른예약</span></a></dd>
 					<dd><a href="#"><img src="컨텐츠img/info/카톡상담2.png" alt="카톡상담"><span>카톡상담</span></a></dd>
 					<dd><a href="#"><img src="컨텐츠img/info/비용상담2.png" alt="비용상담"><span>비용상담</span></a></dd>
-					<dd><a href="#"><img class="길안내" src="컨텐츠img/info/오시는길2.png" alt="오시는길"><span>오시는길</span></a></dd>
+					<dd><a href="#googleMap"><img class="길안내" src="컨텐츠img/info/오시는길2.png" alt="오시는길"><span>오시는길</span></a></dd>
 					<dd><img src="컨텐츠img/info/상담전화.png" alt="상담전화 로고"></dd>
 					<dd><img src="컨텐츠img/info/평일.png" alt="평일 로고"></dd>
 					<dd><img src="컨텐츠img/info/금요일.png" alt="금요일 로고"></dd>
@@ -133,13 +134,13 @@
 						<a href="#"><img src="컨텐츠img/info/카톡상담2.png" alt="카톡상담"></a>
 						<a href="#"><img src="컨텐츠img/info/비용상담2.png" alt="비용상담"></a>
 					</div>
-				<div class="slide">
+				<div class="slideWrap">
 						<ul class="slider">
 							<li><a href="subPage_event.html"><img src="컨텐츠img/img/메인이미지.jpg" alt="슬라이드 메인이미지1"></a></li>
 							<li><a href="subPage_event.html"><img src="컨텐츠img/img/메인이미지남자.jpg" alt="슬라이드 메인이미지2"></a></li>
 							<li><a href="subPage_event.html"><img src="컨텐츠img/img/메인이미지여자.jpg" alt="슬라이드 메인이미지3"></a>
 						</ul>
-					</div>	
+				</div>	
 			</div><!--content1 끝-->
 			
 			<div class="content2">
@@ -152,49 +153,192 @@
 					</div>
 				</div>
 				<div class="todayRight">
-					<dlv id="rightImg">
-						<!--<dt><a href="#"><img src="컨텐츠img/info/chevron-left.png" alt="이미지 우 화살표"></a></dt>
-						<dt><a href="#"><img src="컨텐츠img/info/chevron-right.png" alt="이미지 좌 화살표"></a></dt>-->
-							<a href="#"><img src="컨텐츠img/img/컨텐츠2.png"    alt="컨텐츠2의 이미지" width="240px"></a>
-							<a href="#"><img src="컨텐츠img/img/컨텐츠2-1.png" alt="컨텐츠2의 이미지" width="240px"></a>
-							<a href="#"><img src="컨텐츠img/img/컨텐츠2-2.png" alt="컨텐츠2의 이미지" width="240px"></a>
-							<a href="#"><img src="컨텐츠img/img/컨텐츠2-3.png" alt="컨텐츠2의 이미지" width="240px"></a></dd>
-							<!-- <a href="#"><img src="컨텐츠img/img/컨텐츠2-4.png" alt="컨텐츠2의 이미지" width="215px"></a></dd> -->
-					</dlv>
-					<div id="allow">
-						<a herf="#"><img class="leftAllow" src="컨텐츠img/info/angle-left-solid.svg" alt="content4_1 이미지"></a>
-						<a herf="#"><img class="rightAllow" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_1 이미지"></a>
+					<ul id="rightImg">
+							<li><a href="#"><img src="컨텐츠img/img/컨텐츠2.png"    alt="컨텐츠2의 이미지" ></a></li>
+							<li><a href="#"><img src="컨텐츠img/img/컨텐츠2-1.png" alt="컨텐츠2의 이미지" ></a></li>
+							<li><a href="#"><img src="컨텐츠img/img/컨텐츠2-2.png" alt="컨텐츠2의 이미지"></a></li>
+							<li><a href="#"><img src="컨텐츠img/img/컨텐츠2-3.png" alt="컨텐츠2의 이미지"></a></li>
+					<!----> <li><a href="#"><img src="컨텐츠img/img/컨텐츠2-4.png" alt="컨텐츠2의 이미지"></a></li>
+					</div>
+					<div id="btn">
+						<a herf="#"><img class="prev" src="컨텐츠img/info/angle-left-solid.svg" alt="content4_1 이미지"></a>
+						<a herf="#"><img class="next" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_1 이미지"></a>
 					</div>
 				</div>
 			</div><!--content2 끝-->
-			<div class="contentNum3">
+			<div id="content-wrapper">
+				<div class="content3">
+						<!--content3-1-->
+						<div class="content3-1">
+							<div id="content3-1Img">
+								<a herf="#"><img class="img1" src="컨텐츠img/img/content4_1.jpg" alt="content4_1 이미지"></a>
+							</div>
+							<div id="content3-1Txt">
+								<h3>자연스럽고, 화려한 코 = 자려한 코</h3>
+								<p>단연코, 자연스럽고 화려하게 자려한 코</p>
+							</div>
+						<!-- content3-1Bottom -->
+							<div class="content3-1Bottom">	
+								<div id="content3-1Img2">
+									<a herf="#"><img class="img2" src="컨텐츠img/img/content4_1.jpg" alt="content4_1 이미지"></a>
+								</div>
+								<div id="content3-1Txt2">
+									<p class="txt1">자려한 코 성형</p>
+								</div>
+								<div id="content3-1Add">
+									<p class="txt2"><a href>더보기</a></p>
+									<a herf="#"><img class="img3" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_1 이미지"></a>
+								</div>
+							</div>
+						<!-- content3-1Bottom2 -->	
+							<div class="content3-1Bottom2">	
+								<div id="content3-1Img3">
+									<a herf="#"><img class="img4" src="컨텐츠img/img/content4_4.jpg" alt="content4_1 이미지"></a>
+								</div>
+								<div id="content3-1Txt3">
+									<p class="txt1">자려한 코 성형</p>
+								</div>
+								<div id="content3-1Add2">
+									<p class="txt2"><a href>더보기</a></p>
+									<a herf="#"><img class="img5" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_1 이미지"></a>
+								</div>
+							</div>	
+						</div>
+							<!--content3-2-->
+						<div class="content3-2">
+								<div id="content3-2Img">
+									<a herf="#"><img class="img1" src="컨텐츠img/img/content4_2.jpg" alt="content4_2 이미지"></a>
+								</div>
+								<div id="content3-2Txt">
+									<h3>잘 어울리는 눈매</h3>
+									<p>처음부터 마지막까지 예쁘게 자리잡는 눈</p>
+								</div>
+							<!-- content3-2Bottom -->	
+							<div class="content3-2Bottom">
+								<div id="content3-2Img2">
+									<a herf="#"><img class="img2" src="컨텐츠img/img/content4_2.jpg" alt="content4_2 이미지"></a>
+								</div>
+								<div id="content3-2Txt2">
+									<p class="txt1">자려한 코 성형</p>
+								</div>
+								<div id="content3-2Add">
+									<p class="txt2"><a href>더보기</a></p>
+									<a herf="#"><img class="img3" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_3 이미지"></a>
+								</div>
+							</div>
+							<!-- content3-2Bottom2 -->	
+							<div class="content3-2Bottom2">	
+								<div id="content3-2Img3">
+									<a herf="#"><img class="img4" src="컨텐츠img/img/content4_4.jpg" alt="content4_1 이미지"></a>
+								</div>
+								<div id="content3-2Txt3">
+									<p class="txt1">자려한 코 성형</p>
+								</div>
+								<div id="content3-2Add2">
+									<p class="txt2"><a href>더보기</a></p>
+									<a herf="#"><img class="img5" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_1 이미지"></a>
+								</div>
+
+							</div>
+					</div>
+					<!--content3-3-->
+					<div class="content3-3">
+						<div id="content3-3Img">
+							<a herf="#"><img class="img1" src="컨텐츠img/img/content4_3.jpg" alt="content4_1 이미지"></a>
+						</div>
+						<div id="content3-3Txt">
+							<h3>남자의 자연스러움, 남자 성형</h3>
+							<p>은은하게 멋있게 자연스러운 성형</p>
+						</div>
+					<!-- content3-3Bottom -->	
+						<div class="content3-3Bottom">
+							<div id="content3-3Img2">
+								<a herf="#"><img class="img2" src="컨텐츠img/img/content4_3.jpg" alt="content4_1 이미지"></a>
+							</div>
+							<div id="content3-3Txt2">
+								<p class="txt1">자려한 코 성형</p>
+							</div>
+							<div id="content3-3Add">
+								<p class="txt2"><a href>더보기</a></p>
+								<a herf="#"><img class="img3" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_3 이미지"></a>
+							</div>
+						</div>	
+					<!-- content3-3Bottom2 -->	
+						<div class="content3-3Bottom2">	
+							<div id="content3-3Img3">
+								<a herf="#"><img class="img4" src="컨텐츠img/img/content4_4.jpg" alt="content4_1 이미지"></a>
+							</div>
+							<div id="content3-3Txt3">
+								<p class="txt1">자려한 코 성형</p>
+							</div>
+							<div id="content3-3Add2">
+								<p class="txt2"><a href>더보기</a></p>
+								<a herf="#"><img class="img5" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_1 이미지"></a>
+							</div>
+						</div>
+					</div>
+
+
+					<!--content3-4-->
+					<div class="content3-4">
+						<div id="content3-4Img">
+							<a herf="#"><img class="img1" src="컨텐츠img/img/content4_4.jpg" alt="content4_4 이미지"></a>
+						</div>
+						<div id="content3-4Txt">
+							<h3>보정없이 한번에 예뻐지는 얼굴, 안면윤곽</h3>
+							<p>작고 매끄럽고 갸름하게</p>
+						</div>
+					<!-- content3-4Bottom -->	
+						<div class="content3-4Bottom">
+							<div id="content3-4Img2">
+								<a herf="#"><img class="img2" src="컨텐츠img/img/content4_4.jpg" alt="content4_4 이미지"></a>
+							</div>
+							<div id="content3-4Txt2">
+								<p class="txt1">안면윤곽</p>
+							</div>
+							<div id="content3-4Add">
+								<p class="txt2"><a href>더보기</a></p>
+								<a herf="#"><img class="img3" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_4 이미지"></a>
+							</div>
+						</div>
+					<!-- content3-4Bottom2 -->	
+						<div class="content3-4Bottom2">	
+							<div id="content3-4Img3">
+								<a herf="#"><img class="img4" src="컨텐츠img/img/content4_4.jpg" alt="content4_1 이미지"></a>
+							</div>
+							<div id="content3-4Txt3">
+								<p class="txt1">자려한 코 성형</p>
+							</div>
+							<div id="content3-4Add2">
+								<p class="txt2"><a href>더보기</a></p>
+								<a herf="#"><img class="img5" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_1 이미지"></a>
+							</div>
+						</div>
+				</div>
+		</div>	
+			<div class="content4">
 				<h3>TJ MODEL STORY</h3>
 				<ul>
-					<li><img src = "컨텐츠img/img/컨텐츠3-1.png" alt="컨텐츠 3의 1번 이미지"></li>
-					<li><img src = "컨텐츠img/img/컨텐츠3-2.png" alt="컨텐츠 3의 2번 이미지"></li>
-					<li><img src = "컨텐츠img/img/컨텐츠3-3.png" alt="컨텐츠 3의 3번 이미지"></li>
-					<li><img src = "컨텐츠img/img/컨텐츠3-4.png" alt="컨텐츠 3의 4번 이미지"></li>
+					<li><a href="#"><img src = "컨텐츠img/img/컨텐츠3-1.png" alt="컨텐츠 3의 1번 이미지"></a></li>
+					<li><a href="#"><img src = "컨텐츠img/img/컨텐츠3-2.png" alt="컨텐츠 3의 2번 이미지"></a></li>
+					<li><a href="#"><img src = "컨텐츠img/img/컨텐츠3-3.png" alt="컨텐츠 3의 3번 이미지"></a></li>
+					<li><a href="#"><img src = "컨텐츠img/img/컨텐츠3-4.png" alt="컨텐츠 3의 4번 이미지"></a></li>
 				</ul>
 			</div>
-			<div class="content3">
-				<div class="video-wrapper">
-					<!-- <h3><a href="#"><img src="컨텐츠img/logo.png" alt="더조은 성형외과 로고" ></a></h3> -->
-					
-							<iframe class="세미아웃라인" width="800" height="600" src="https://www.youtube.com/embed/s9Y4pXapEik" title="세미아웃라인 쌍꺼풀이 대세인 이유? 인아웃라인 차이점 비교 영상!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-							
-							<iframe class="남자코" width="300" height="130"  src="https://www.youtube.com/embed/8K14UHRRh2U" title="주목! &#39;남자 코성형&#39;의 대세 원장님이 말씀하십니다.👃" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-							<iframe class="윤곽" width="300" height="130" src="https://www.youtube.com/embed/_L3IgfZl3z8" title="윤곽 재수술? 이 영상에서 다 알려드림!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-							
-							<iframe class="자려한코" width="300" height="130"  src="https://www.youtube.com/embed/qeVcQZCGAwY" title="2024 최신코 트렌드 &#39; 자려한코 &#39;  이 영상 하나면 끝" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-							
-							
-							
-							<iframe class="윤곽수술" width="300" height="130"  src="https://www.youtube.com/embed/1EZfFiXTP9E" title="윤곽수술 방법? 얼굴이 크거나 넓거나 길거나 각지거나!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!---->
-				</div>
-				<div class="text-wrapper">
+			 <div class="content5">
+				<h3>TJ YOUTUBE STORY</h3>
+				<ul class="video-wrapper">
+					<!--<h3><a href="#"><img src="컨텐츠img/logo.png" alt="더조은 성형외과 로고" ></a></h3> -->
+					<!----><li><iframe class="vid1" width="400" height="250" src="https://www.youtube.com/embed/3WuQZdBFMLk" title="자가늑코성형 시대가 찾아왔다 (ft.티에스 자가늑 코수술)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+							<li><iframe class="vid1" width="400" height="250"  src="https://www.youtube.com/embed/8K14UHRRh2U" title="주목! &#39;남자 코성형&#39;의 대세 원장님이 말씀하십니다.👃" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+							<li><iframe class="vid1" width="400" height="250" src="https://www.youtube.com/embed/_L3IgfZl3z8" title="윤곽 재수술? 이 영상에서 다 알려드림!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+							<li><iframe class="vid1" width="400" height="250"  src="https://www.youtube.com/embed/qeVcQZCGAwY" title="2024 최신코 트렌드 &#39; 자려한코 &#39;  이 영상 하나면 끝" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li> 
+							<li><iframe class="vid1" width="400" height="250"  src="https://www.youtube.com/embed/1EZfFiXTP9E" title="윤곽수술 방법? 얼굴이 크거나 넓거나 길거나 각지거나!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li> <!---->
+				</ul>
+		<!--<div class="text-wrapper">
 				<ul>
-					<!--<li class="세미아웃라인"><a href="#">윤곽수술 방법? 얼굴이 크거나 넓거나 길거나 각지거나!
-								<p>더조은성형외과</p><span>beauty wonderland</span></a></li>	-->		
+					<li class="세미아웃라인"><a href="#">윤곽수술 방법? 얼굴이 크거나 넓거나 길거나 각지거나!
+								<p>더조은성형외과</p><span>beauty wonderland</span></a></li>			
 					<li class="남자코성형"><a href="#">주목! &#39;남자 코성형&#39;의 대세 원장님이 말씀하십니다.
 								<br/>더조은성형외과 beauty wonderland</a></li>						
 					<li class="윤곽재수술"><a href="#">윤곽 재수술? 이 영상에서 다 알려드림!
@@ -205,189 +349,10 @@
 					<li class="윤곽수술방법"><a href="#">윤곽수술 방법? 얼굴이 크거나 넓거나 길거나 각지거나!
 								<br/>더조은성형외과 beauty wonderland</a></li>		
 				</ul>
-				</div>
-			</div><!--content3 끝-->
-			<!--<div class="content4">
-				<a href="#"><img src="컨텐츠img/img/컨텐츠4.jpg" alt="가슴수술은 TJ " width="390px"></a>
-				<a href="#"><img src="컨텐츠img/img/컨텐츠4-1.jpg" alt="남자성형"  width="390px"></a>
-				<a href="#"><img src="컨텐츠img/img/컨텐츠4-2.jpg" alt="리얼모델"  width="390px"></a>
-			</div>content4 끝-->
-			<div class="content4">
-				
-				<!--content4-1-->
-				<div class="content4-1">
-					<div id="content4-1Img">
-						<a herf="#"><img class="img1" src="컨텐츠img/img/content4_1.jpg" alt="content4_1 이미지"></a>
-					</div>
-					<div id="content4-1Txt">
-						<h3>자연스럽고, 화려한 코 = 자려한 코</h3>
-						<p>단연코, 자연스럽고 화려하게 자려한 코</p>
-					</div>
-				<!-- content4-1Bottom -->
-					<div class="content4-1Bottom">	
-						<div id="content4-1Img2">
-							<a herf="#"><img class="img2" src="컨텐츠img/img/content4_1.jpg" alt="content4_1 이미지"></a>
-						</div>
-						<div id="content4-1Txt2">
-							<p>자려한 코 성형</p>
-						</div>
-						<div id="content4-1Add">
-							<p><a href>더보기</a></p>
-							<a herf="#"><img class="img3" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_1 이미지"></a>
-						</div>
-					</div>
-				<!-- content4-1Bottom2 -->	
-					<div class="content4-1Bottom2">	
-						<div id="content4-1Img3">
-							<a herf="#"><img class="img4" src="컨텐츠img/img/content4_4.jpg" alt="content4_1 이미지"></a>
-						</div>
-						<div id="content4-1Txt3">
-							<p>자려한 코 성형</p>
-						</div>
-						<div id="content4-1Add2">
-							<p><a href>더보기</a></p>
-							<a herf="#"><img class="img5" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_1 이미지"></a>
-						</div>
-					</div>	
-				 </div>
-				<!--content4-2-->
-				<div class="content4-2">
-					<div id="content4-2Img">
-						<a herf="#"><img class="img2-1" src="컨텐츠img/img/content4_2.jpg" alt="content4_2 이미지"></a>
-					</div>
-					<div id="content4-2Txt">
-						<h3>잘 어울리는 눈매</h3>
-						<p>처음부터 마지막까지 예쁘게 자리잡는 눈</p>
-					</div>
-				<!-- content4-2Bottom -->	
-					<div class="content4-2Bottom">
-						<div id="content4-2Img2">
-							<a herf="#"><img class="img2-2"src="컨텐츠img/img/content4_2.jpg" alt="content4_2 이미지"></a>
-						</div>
-						<div id="content4-2Txt2">
-							<p>자려한 코 성형</p>
-						</div>
-						<div id="content4-2Add">
-							<p><a href>더보기</a></p>
-							<a herf="#"><img class="img2-3" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_3 이미지"></a>
-						</div>
-					</div>
-				<!-- content4-2Bottom2 -->	
-					<div class="content4-2Bottom2">	
-						<div id="content4-2Img3">
-							<a herf="#"><img class="img2-4" src="컨텐츠img/img/content4_4.jpg" alt="content4_1 이미지"></a>
-						</div>
-						<div id="content4-2Txt3">
-							<p>자려한 코 성형</p>
-						</div>
-						<div id="content4-2Add2">
-							<p><a href>더보기</a></p>
-							<a herf="#"><img class="img2-5" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_1 이미지"></a>
-					</div>
-
-					</div>
-				 </div>
-				<!--content4-3-->
-				<div class="content4-3">
-					<div id="content4-3Img">
-						<a herf="#"><img class="img3-1" src="컨텐츠img/img/content4_3.jpg" alt="content4_1 이미지"></a>
-					</div>
-					<div id="content4-3Txt">
-						<h3>남자의 자연스러움, 남자 성형</h3>
-						<p>은은하게 멋있게 자연스러운 성형</p>
-					</div>
-				<!-- content4-3Bottom -->	
-					<div class="content4-3Bottom">
-						<div id="content4-3Img2">
-							<a herf="#"><img class="img3-2" src="컨텐츠img/img/content4_3.jpg" alt="content4_1 이미지"></a>
-						</div>
-						<div id="content4-3Txt2">
-							<p>자려한 코 성형</p>
-						</div>
-						<div id="content4-3Add">
-							<p><a href>더보기</a></p>
-							<a herf="#"><img class="img3-3" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_3 이미지"></a>
-						</div>
-					</div>	
-				<!-- content4-3Bottom2 -->	
-					<div class="content4-3Bottom2">	
-						<div id="content4-3Img3">
-							<a herf="#"><img class="img3-4" src="컨텐츠img/img/content4_4.jpg" alt="content4_1 이미지"></a>
-						</div>
-						<div id="content4-3Txt3">
-							<p>자려한 코 성형</p>
-						</div>
-						<div id="content4-3Add2">
-							<p><a href>더보기</a></p>
-							<a herf="#"><img class="img3-5" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_1 이미지"></a>
-						</div>
-					</div>
-				</div>
-
-
-				<!--content4-4-->
-				<div class="content4-4">
-					<div id="content4-4Img">
-						<a herf="#"><img class="img4-1" src="컨텐츠img/img/content4_4.jpg" alt="content4_4 이미지"></a>
-					</div>
-					<div id="content4-4Txt">
-						<h3>보정없이 한번에 예뻐지는 얼굴, 안면윤곽</h3>
-						<p>작고 매끄럽고 갸름하게</p>
-					</div>
-				<!-- content4-4Bottom -->	
-					<div class="content4-4Bottom">
-						<div id="content4-4Img2">
-							<a herf="#"><img class="img4-2" src="컨텐츠img/img/content4_4.jpg" alt="content4_4 이미지"></a>
-						</div>
-						<div id="content4-4Txt2">
-							<p>안면윤곽</p>
-						</div>
-						<div id="content4-4Add">
-							<p><a href>더보기</a></p>
-							<a herf="#"><img class="img4-3" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_4 이미지"></a>
-						</div>
-					</div>
-				<!-- content4-4Bottom2 -->	
-					<div class="content4-4Bottom2">	
-						<div id="content4-4Img3">
-							<a herf="#"><img class="img4-4" src="컨텐츠img/img/content4_4.jpg" alt="content4_1 이미지"></a>
-						</div>
-						<div id="content4-4Txt3">
-							<p>자려한 코 성형</p>
-						</div>
-						<div id="content4-4Add2">
-							<p><a href>더보기</a></p>
-							<a herf="#"><img class="img4-5" src="컨텐츠img/info/angle-right-solid.svg" alt="content4_1 이미지"></a>
-						</div>
-					 </div>
-			</div>
-			<!-- <div class="content5"> 
-				<dl class="counsel">
-					<dt>COUNSEL</dt>
-						<dd><a href="#">안면윤곽 <span>안면윤곽 후 실밥제거</span></a></dd>
-						<dd><a href="#">눈성형 <span>눈성형 후 실밥제거</span></a></dd>
-						<dd><a href="#">코성형 <span>코성형 후 실밥제거</span></a></dd>
-				</dl>
-				<dl class="reveiw">
-					<dt>REVEIW</dt>
-						<dd><a href="#">안면윤곽 <span>윤곽수술후 10개월차</span></a></dd>
-						<dd><a href="#">눈성형 <span>하안검수술 6개월차..</span></a></dd>
-						<dd><a href="#">코성형 <span>코성형 재수술 6개월차..</span></a></dd>
-				</dl>
-				<dl class="notice">
-					<dt>NOTICE</dt>
-						<dd><a href="#">안면윤곽 <span>성형 후 관리</span></a></dd>
-						<dd><a href="#">눈성형 <span>재수술 공지 및 관리</span></a></dd>
-						<dd><a href="#">코성형 <span>구형구축 코 수술 공지</span></a></dd>
-				</dl>
-				<dl class="qna">
-					<dt>QNA</dt>
-						<dd><a href="#">안면윤곽 <span>안면윤곽 부작용 어떤게..</span></a></dd>
-						<dd><a href="#">눈성형 <span>눈성형 3번째인데 괜찮을까요..</span></a></dd>
-						<dd><a href="#">코성형 <span>코성형 후 코가 시큰거려요..</span></a></dd>
-				</dl>-->
-			
+				</div>-->
 			</div><!--content5 끝-->
+		</div>	
+			
 		</div><!--container 끝-->
 		<div id="footer">
 			<div id="foot">
@@ -397,7 +362,7 @@
 					<li>진료시간</li>
 				</ul> 
 				<ul class="contact2">
-					<li><h2><a href="#">02-123-1234</h2></li>
+					<li><h2>02-123-1234</h2></li>
 					<li>평일</li>
 					<li>금요일(야간진료)</li>
 					<li>토요일</li>
@@ -416,7 +381,7 @@
 					<li class="gil"><a href="#">길안내 바로가기✈️</a></li>
 				</ul> 
 				<div class="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8070669839294!2d127.09996807607239!3d37.51246832722629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca50a915f665b%3A0xabeb10cd5efdfce2!2z66Gv642w7JuU65Oc7YOA7JuM!5e0!3m2!1sko!2skr!4v1722700988538!5m2!1sko!2skr" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<a name="googleMap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8070669839294!2d127.09996807607239!3d37.51246832722629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca50a915f665b%3A0xabeb10cd5efdfce2!2z66Gv642w7JuU65Oc7YOA7JuM!5e0!3m2!1sko!2skr!4v1722700988538!5m2!1sko!2skr" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
 				</div>
 				<ul class="address">
 					<li>대표 : ㅇㅇㅇ |</li>
