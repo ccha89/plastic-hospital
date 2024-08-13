@@ -6,4 +6,4 @@ li {list-style-type:none;}
  a:hover {text-decoration:underline;}
  img {vertical-align:middle; border:none;} /*이미지에 생기는 1px정도의 차이를 없애주기위해 버티컬 사용*/
  address, em {font-style:normal;}
- body {font-size:12px; font-family:굴림;}
+ body {font-size:12px; font-family:arial;}

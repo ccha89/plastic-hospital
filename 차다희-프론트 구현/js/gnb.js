@@ -27,14 +27,34 @@ $(function(){
 
 	/*content1 이미지 슬라이드*/
 
-	function slide(){
-		$(".slide ul").animate({top:-500+"px"},1000,function(){
-		  $(".slide ul").append($(".slide ul li").first())
-		  $(".slide ul").css({top:0})
-			})
-	  }
-	  setInterval(slide,3000);
 
+		/**/
+		let slideWidth = 950;
+		let totalSlides = $(".slider").length; 
+		let currentSlide = 0;
+	
+		$(".slider").each(function(indexNum){
+			let aa= slideWidth *indexNum;
+			$(this).css({left:aa});
+			console.log(indexNum + "/"+aa);
+		});
+	
+		setInterval(function(){
+			$(".slider").each(function(){
+				currentSlide++;
+				
+				let nowLeft= parseInt($(this).css("left"));
+				let moveLeft= nowLeft - slideWidth;
+				
+			$(this).animate({left:moveLeft},1000,function(){
+			  if(moveLeft ==-950 ){
+				$(".slider").append($(".slider li").first())
+				$(".slider").css({left:0})
+					}
+				 });
+			  });    
+			},3000);
+	
 
 	/*content2 prev, next 버튼*/
 	
@@ -88,6 +108,26 @@ $(function(){
 		$(".content5 ul").css({left:0})
   		})
 	}
-	setInterval(slide,3000);
-});
+	setInterval(slide,2000);
 
+	/*sideNav hide*/
+	$(window).scrollTop(function(){
+		let num = $(this).scrollTop();
+		let indexNum =0; //인덱스 번호가 바뀌는것을 담는 곳 선택된 section의 인덱스 번호를 담고있다. 
+		
+		if(num>=0 && num <=500){indexNum=0;}
+		if(num>=501 && num <=800){indexNum=1;}
+		if(num>=801 && num <=1450){indexNum=2;}
+		if(num>=1451 && num <=2100){indexNum=3;}
+		if(num>=2101 && num <=2750){indexNum=4;}
+		if(num>=2751){indexNum=5;}
+
+		console.log(`Scroll Position: ${num}, Index Number: ${indexNum}`); // 디버깅용 로그
+
+		if (indexNum == 4) {
+            $("#sideNav").hide();
+        }else{
+			$("#sideNav").show();
+		}
+	});
+});	

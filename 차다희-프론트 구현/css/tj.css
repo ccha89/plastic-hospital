@@ -45,10 +45,20 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 			#popupImg .banner{box-shadow:2px 2px 2px #000; outline:1px solid gray; width:500px; height:600px; }	
 				#popupImg a{position:absolute; top:20px; right:10px;}	
 		
-		#sideNav {/*display: none;*/ 
+		#sideNav {
 			overflow:hidden; 
 			clear:both; 
-			position:fixed; top:220px; right:0;  float:right; background-color:#fff; outline:1px solid gray; padding:3px; height:450px; text-align:center;  border-radius: 15px; z-index: 99999;}
+			position:fixed; 
+			top:220px; right:0;  
+			float:right; 
+			background-color:#fff; 
+			outline:1px solid gray; 
+			padding:3px; 
+			height:450px; 
+			text-align:center;  
+			border-radius: 15px; 
+			z-index: 99999;}
+
 			#sideNav dd{margin:5px 0; padding:0 5px;}
 			#sideNav dd a{text-decoration:none;}
 			#sideNav dd a:hover{color:gray; text-decoration:none;}
@@ -61,51 +71,66 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 			flex-direction: column;}
 
 			/* content1 */
-			.content1{}
+			.content1{
+				width: 100%;
+				height:500px; 
+			}
 				.content1Txt{
 					width:50%; 
 					height:500px; 
 					text-align:center; 
 					z-index:200; 
 					display:inline-block; 
-					float:right; 
+					float:left; 
 					position:relative;  }	
 					.content1Txt h2 { position:absolute; top:20%; left:25%; font-size:50px;}
 					.content1Txt p{ font-size:20px; position:absolute; top:45%; left:45%; margin-left:-50px;}
 					.content1Txt span{display:block;  }
 					.click {
 						position:absolute; 
-						right:18%; 
-						bottom:15%; 
+						left:15%; 
+						bottom:37%; 
 						z-index: 99;}
-						.click a{float:left; cursor: pointer;}
-						.click img{margin-left:50px; width:35px; height:35px;}
+						.click a{float:left;}
+						.click img{
+							margin-left:50px; 
+							width:40px; 
+							height:40px;
+							cursor: pointer;
+						}
 				
-			.slideWrap {
-							position: relative;
-							width: 750px; /* 한 이미지의 너비 */
-							height: 500px; /* 이미지의 높이 */
-							overflow: hidden;
-							}
+			.slideWrap { overflow: hidden;}
 				.slider { 
 					position: relative; /* 상대적 위치 */
-					width: 2250px; /* 3개의 슬라이드를 모두 포함하는 너비 */
-					left: 0; /* 초기 위치 */
-					list-style: none; /* ul 기본 스타일 제거 */
-					margin: 0;
-					padding: 0;
-					display: flex; /* 플렉스 박스를 사용하여 수평 정렬 */}
+					width: 950px; /* 3개의 슬라이드를 모두 포함하는 너비 */
+					height: 500px;
+					display: flex; /* 플렉스 박스를 사용하여 수평 정렬 */
+					
+				}
+
 					.slider li {
-						width: 750px; /* 슬라이드 하나의 너비 */
-    					height: 500px;
+						width: 950px; /* 슬라이드 하나의 너비 */
+    					height: 100%;
+						list-style: none;
+						display: flex; 
+						justify-content: center;
+						align-items: center;
+						
 						}
 					.slider li img{
-						width: 100%; /* 이미지가 li 크기에 맞게 조정 */
+						width: 950px; /* 이미지가 li 크기에 맞게 조정 */
 						height: 100%;
 						display: block; /* 이미지가 블록 레벨 요소로 취급되도록 설정 */}
 			
-			/* content2 */
-			.content2 { clear:both; position:relative; width: 100%; height:800px;   background-color:#FFE3EE;}
+							
+						/* content2 */
+			.content2 { 
+				clear:both; 
+				position:relative; 
+				width: 100%; 
+				height:800px;   
+				background-color:#FFE3EE;}
+				
 				.todayLeft{  
 					display:inline; 
 					float:left; 
@@ -116,12 +141,14 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 						#leftImg img {
 							position:absolute; 
 							top:180px;  
-							left:20%; width:250px; height:100px;}
+							left:28%; 
+							width:250px; 
+							height:100px;}
 					#leftTxt {position:relative;}
 						#leftTxt p{
 							position:absolute;  
 							top:320px; 
-							left:30%; 
+							left:38%; 
 							font-size:60px; 
 							font-weight:bold;
 							font-size: 80px; 
@@ -137,7 +164,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 								margin-top: 240px;
 								position: relative;
 								top: 8%;
-								left: 35%;
+								left: 43%;
 							}
 							
 							#rightImg {
@@ -146,7 +173,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 								left: 0;
 								overflow: hidden;
 								width: 880px;
-								height: 310px;
+								height: 350px;
 							}
 							
 							#rightImg li {
@@ -159,7 +186,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 							}
 							
 							#rightImg li:hover {
-								transform: scale(1.2);
+								transform: scale(1.1);
 								border-radius: 10px;
 							}
 							#rightImg img{
@@ -179,22 +206,15 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 								height: 50px;
 								position: absolute;
 								top: 55%;
-								left: 30%;
+								left: 38%;
 							}
 							
-							.next {
-								width: 50px;
-								height: 50px;
-								position: absolute;
-								top: 55%;
-								right: 5%;
-							}
 							.next{
 								width:50px; 
 								height: 50px; 
 								position:absolute; 
 								top:55%; 
-								right:5%;
+								right:9%;
 							}
 						/**/
 
@@ -219,7 +239,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 						
 						.content3-1, .content3-2, .content3-3, .content3-4 {
 							float: left;
-							width: 300px;
+							width: 380px;
 							height: auto;
 							position: relative;
 							margin-right: 30px;
@@ -236,11 +256,12 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 						#content3-4Img .img1 {
 							border-radius: 10px;
 							cursor: pointer;
-							width: 300px;
+							width: 380px;
 						}
 						#content3-1Txt,#content3-2Txt,
 						#content3-3Txt,#content3-4Txt{
-							font-size: 12px;
+							font-size: 14px;
+							margin-top: 15px;
 						}
 						
 						.content3-1Bottom, .content3-1Bottom2, 
@@ -254,7 +275,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 						#content3-2Img2 .img2, #content3-2Img3 .img4,
 						#content3-3Img2 .img2, #content3-3Img3 .img4,
 						#content3-4Img2 .img2, #content3-4Img3 .img4 {
-							border-radius: 10px;
+							border-radius: 12px;
 							width: 40px;
 							height: 40px;
 						}
@@ -276,8 +297,9 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 							position: absolute;
 							top: -30px;
 							left: 70px;
-							
 						}
+
+						.txt1 a:hover,.txt2 a:hover{color: #5ea9f0;}
 						
 						#content3-1Add,#content3-1Add2,
 						#content3-2Add,#content3-2Add2,
@@ -292,7 +314,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 						 {
 							position: absolute;
 							top: -30px;
-							left: 230px;
+							left: 320px;
 							font-size: 10px;
 						}
 						
@@ -303,7 +325,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 						 {
 							position: absolute;
 							top: -30px;
-							left: 260px;
+							left: 355px;
 							width: 15px;
 							height: 15px;
 							cursor: pointer;
@@ -321,8 +343,8 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 						margin-right: 25px;
 					}
 					.content4 li img{
-						width:300px;
-						height: 160px;
+						width:390px;
+						height: 190px;
 						border-radius: 10px;
 					}
 					.content4 img:hover{border: 8px solid #ffa0c6;}
@@ -361,7 +383,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 			width:100%; height: 500px; 
 			position:relative; 
 			font-size: 14px;
-			z-index: 99999;
+			z-index: 99;
 		}
 			#foot{height:500px;}
 				.contact{position: relative; top:50px; left:20px;  }
@@ -372,7 +394,7 @@ body{width:100%; margin:0 auto; font-size: 16px; font-family: arial; overflow-x:
 					.contact2 li{ margin-bottom:10px; color:#fff;}
 				.contact3{position: relative; top:-160px; left:300px; color:#fff; }
 					.contact3 li{margin-bottom:10px;}
-				.location{width:300px; height:auto; position: relative; top:-330px; left:900px;  }
+				.location{width:300px; height:auto; position: relative; top:-330px; left:1100px;  }
 					.location h2{ color:#fff;}
 					.location li{ margin-bottom: 10px; color:#fff;}
 					.location .gil{border: 1px solid #fff; border-radius: 30px; width: 150px; padding: 10px; margin-top: 70px;}
